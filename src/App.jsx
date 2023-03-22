@@ -1,11 +1,16 @@
+import { Route, Routes } from "react-router-dom"
+import {Home} from "./pages"
+import {SharedContent} from "./components"
 
 
 function App() {
 
   return (
-    <div className="App">
-      <h1 className="text-9xl text-blue-500">Hello there</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<SharedContent/>}>
+        <Route index element={<Home/>}/>
+      </Route>
+    </Routes>
   )
 }
 

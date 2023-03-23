@@ -2,7 +2,7 @@ import { logoDark, BurgerIcon } from "../assets";
 
 const Navbar = () => {
   return (
-    <nav className="py-9 col-start-2 col-end-12 flex justify-between items-start">
+    <nav className="py-9 -mb-20 col-start-2 col-end-12 flex justify-between items-start">
     
       {/* LEFT */}
       <div>

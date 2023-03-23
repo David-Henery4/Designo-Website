@@ -17,7 +17,11 @@ import graphicDesignImgMob from "./home/mobile/image-graphic-design.jpg"
 
 // SVGS
 
+// ~Burger~
 import {ReactComponent as BurgerIcon} from "./shared/mobile/icon-hamburger.svg"
+// ~Right arrow icon
+import {ReactComponent as ArrowRightIcon} from "./shared/desktop/icon-right-arrow.svg"
+
 
 export {
   // IMGs
@@ -30,4 +34,5 @@ export {
   webDesignImgMob,
   // SVGs
   BurgerIcon,
+  ArrowRightIcon,
 }

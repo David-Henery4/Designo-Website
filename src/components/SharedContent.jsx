@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom"
 import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 
 const SharedContent = () => {
@@ -8,6 +9,7 @@ const SharedContent = () => {
   <main className="App font-jost grid grid-cols-main gap-y-20">
     <Navbar/>
     <Outlet/>
+    <Footer/>
   </main>
   )
 }

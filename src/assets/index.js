@@ -21,6 +21,10 @@ import graphicDesignImgMob from "./home/mobile/image-graphic-design.jpg"
 import {ReactComponent as BurgerIcon} from "./shared/mobile/icon-hamburger.svg"
 // ~Right arrow icon
 import {ReactComponent as ArrowRightIcon} from "./shared/desktop/icon-right-arrow.svg"
+// Home page illustrations
+import { ReactComponent as PassionateIllustration } from "./home/desktop/illustration-passionate.svg";
+import { ReactComponent as FriendlyIllustration } from "./home/desktop/illustration-friendly.svg";
+import { ReactComponent as ResourcefulIllustration } from "./home/desktop/illustration-resourceful.svg";
 
 
 export {
@@ -35,4 +39,7 @@ export {
   // SVGs
   BurgerIcon,
   ArrowRightIcon,
+  PassionateIllustration,
+  FriendlyIllustration,
+  ResourcefulIllustration,
 }

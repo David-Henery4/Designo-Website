@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <footer className="grid grid-cols-main col-start-1 col-end-13 md:grid-cols-mainTab">
       {/* CTA */}
-      <section className="col-start-2 col-end-12 row-start-1 row-end-7 z-10 w-full px-6 py-16 rounded-2xl text-white bg-peach flex flex-col justify-center items-center gap-8 md:py-14 md:row-end-5">
-        <div className="w-full text-center grid gap-2 xsm:gap-6 justify-items-center">
+      <section className="col-start-2 col-end-12 row-start-1 row-end-7 z-10 w-full px-6 py-16 rounded-2xl text-white bg-peach flex flex-col justify-center items-center gap-8 md:py-14 md:row-end-5 smDesk:flex-row smDesk:justify-between smDesk:px-12">
+        <div className="w-full text-center grid gap-2 xsm:gap-6 justify-items-center smDesk:w-auto smDesk:justify-items-start smDesk:text-left">
           <h3 className="text-head1Mob leading-9 font-medium max-w-xs xsm:text-head2 xsm:leading-10">
             Let’s talk about your project
           </h3>
@@ -29,7 +29,7 @@ const Footer = () => {
 
       {/* FOOTER CONTENT */}
       <section className="col-start-1 col-end-13 row-start-4 row-end-[13] w-full bg-black md:px-10">
-        <div className="text-white pt-64 px-6 pb-16 grid gap-10 justify-center md:pt-40 md:grid-cols-footerTab">
+        <div className="text-white pt-64 px-6 pb-16 grid gap-10 justify-center md:pt-40 md:grid-cols-footerTab smDesk:pt-36">
           <img
             className="pb-8 -mb-2 border-b border-b-white/10 md:border-none md:col-start-1 md:col-end-2 md:p-0"
             src={logoLight}
@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
 
           {/* SOCIALS ICON LINKS */}
-          <ul className="w-full flex justify-center items-center gap-4">
+          <ul className="w-full flex justify-center items-center gap-4 md:justify-end">
             <li>
               <a href="#">
                 <FacebookIcon />

@@ -8,6 +8,7 @@ module.exports = {
     screens: {
       xsm: "30.31em", // 485px
       smTab: "45.62em", // 730px
+      smDesk: "58.12em", // 930px
       ...defaultTheme.screens,
     },
     colors: {

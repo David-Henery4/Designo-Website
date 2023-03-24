@@ -6,7 +6,7 @@ const webDesignCardData = {
   bgImage: {
     mob: "bg-web-design-card-mob",
     tab: "xsm:bg-web-design-card-tab",
-    desk: "lg:bg-web-design-card-desk",
+    desk: "smDesk:bg-web-design-card-desk",
   },
 };
 
@@ -17,7 +17,7 @@ const appDesignCardData = {
   bgImage: {
     mob: "bg-app-design-card-mob",
     tab: "xsm:bg-app-design-card-tab",
-    desk: "lg:bg-app-design-card-desk",
+    desk: "smDesk:bg-app-design-card-desk",
   },
 };
 
@@ -28,7 +28,7 @@ const graphicDesignCardData = {
   bgImage: {
     mob: "bg-graphic-design-card-mob",
     tab: "xsm:bg-graphic-design-card-tab",
-    desk: "lg:bg-graphic-design-card-desk",
+    desk: "smDesk:bg-graphic-design-card-desk",
   },
 };
 

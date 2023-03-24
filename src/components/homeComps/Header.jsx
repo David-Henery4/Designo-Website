@@ -2,7 +2,7 @@ import { headerImg, headerImgCropped } from "../../assets";
 
 const Header = () => {
   return (
-    <header className="w-full text-center bg-peach text-white col-start-1 col-end-13">
+    <header className="w-full text-center bg-peach text-white col-start-1 col-end-13 sm:col-start-2 sm:col-end-12 sm:rounded-2xl">
       {/* TEXT */}
       <div className="px-6 pt-20 flex flex-col justify-center items-center gap-4 xsm:gap-9">
         <h1 className="text-head1Mob leading-9 font-medium max-w-[489px] xsm:text-5xl xsm:leading-head1">

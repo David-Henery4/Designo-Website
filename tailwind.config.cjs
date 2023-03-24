@@ -6,7 +6,8 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      // mdTab: "38.75em", // 620px
+      xsm: "30.31em", // 485px
+      smTab: "45.62em", // 730px
       ...defaultTheme.screens,
     },
     colors: {
@@ -39,6 +40,8 @@ module.exports = {
       },
       gridTemplateColumns: {
         main: "24px repeat(10,1fr) 24px",
+        mainTab: "40px repeat(10,1fr) 40px",
+        footerTab: "repeat(3,1fr)",
       },
       backgroundImage: {
   

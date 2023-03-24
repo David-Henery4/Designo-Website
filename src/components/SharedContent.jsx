@@ -6,7 +6,7 @@ import Footer from "./Footer"
 const SharedContent = () => {
 
   return (
-  <main className="App font-jost grid grid-cols-main gap-y-20">
+  <main className="App font-jost grid grid-cols-main gap-y-20 md:grid-cols-mainTab">
     <Navbar/>
     <Outlet/>
     <Footer/>

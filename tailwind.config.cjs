@@ -6,10 +6,11 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
+      ...defaultTheme.screens,
       xsm: "30.31em", // 485px
       smTab: "45.62em", // 730px
       smDesk: "58.12em", // 930px
-      ...defaultTheme.screens,
+      desk: "70em", // 1120px
     },
     colors: {
       peach: "#E7816B",

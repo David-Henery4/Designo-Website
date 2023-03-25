@@ -3,7 +3,7 @@ import navigationData from "../data/navigationData";
 
 const Navbar = () => {
   return (
-    <nav className="py-9 -mb-20 col-start-2 col-end-12 flex justify-between items-start sm:items-center">
+    <nav className="py-9 -mb-20 col-start-2 col-end-12 flex justify-between items-start sm:items-center sm:py-16 smDesk:-mb-40">
     
       {/* LEFT */}
       <div>

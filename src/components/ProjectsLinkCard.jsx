@@ -9,7 +9,7 @@ const ProjectsLinkCard = ({title,link,bgImage,changes = null}) => {
       ${changes?.rowStart} ${changes?.rowEnd} ${changes?.height}`}
     >
       <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
-      <h3 className="relative text-head3 tracking-[1.4px] leading-9">
+      <h3 className="relative text-head3 tracking-[1.4px] leading-9 xsm:text-head2 xsm:leading-head2 xsm:tracking-[2px]">
         {title}
       </h3>
       <a

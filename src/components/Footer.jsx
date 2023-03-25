@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="grid grid-cols-main col-start-1 col-end-13 md:grid-cols-mainTab">
       {/* CTA */}
-      <section className="col-start-2 col-end-12 row-start-1 row-end-7 z-10 w-full px-6 py-16 rounded-2xl text-white bg-peach flex flex-col justify-center items-center gap-8 md:py-14 md:row-end-5 smDesk:flex-row smDesk:justify-between smDesk:px-12">
+      <section className="col-start-2 col-end-12 row-start-1 row-end-7 z-10 w-full px-6 py-16 rounded-2xl text-white bg-peach flex flex-col justify-center items-center gap-8 md:py-14 md:row-end-5 smDesk:flex-row smDesk:justify-between smDesk:px-12 lg:py-11 lg:px-16 desk:px-24">
         <div className="w-full text-center grid gap-2 xsm:gap-6 justify-items-center smDesk:w-auto smDesk:justify-items-start smDesk:text-left">
           <h3 className="text-head1Mob leading-9 font-medium max-w-xs xsm:text-head2 xsm:leading-10">
             Let’s talk about your project

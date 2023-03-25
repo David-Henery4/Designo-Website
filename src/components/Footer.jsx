@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="grid grid-cols-main col-start-1 col-end-13 md:grid-cols-mainTab">
+    <footer className="grid grid-cols-main col-start-1 col-end-13 md:grid-cols-mainTab lgDesk:grid-cols-mainLgDesk">
       {/* CTA */}
       <section className="col-start-2 col-end-12 row-start-1 row-end-7 z-10 w-full px-6 py-16 rounded-2xl text-white bg-peach flex flex-col justify-center items-center gap-8 md:py-14 md:row-end-5 smDesk:flex-row smDesk:justify-between smDesk:px-12 lg:py-11 lg:px-16 desk:px-24">
         <div className="w-full text-center grid gap-2 xsm:gap-6 justify-items-center smDesk:w-auto smDesk:justify-items-start smDesk:text-left">
@@ -28,7 +28,7 @@ const Footer = () => {
       </section>
 
       {/* FOOTER CONTENT */}
-      <section className="col-start-1 col-end-13 row-start-4 row-end-[13] w-full bg-black md:px-10">
+      <section className="col-start-1 col-end-13 row-start-4 row-end-[13] w-full bg-black md:px-10 lgDesk:px-[165px]">
         <div className="text-white pt-64 px-6 pb-16 grid gap-10 justify-center md:pt-40 md:grid-cols-footerTab smDesk:pt-36">
           <img
             className="pb-8 -mb-2 border-b border-b-white/10 md:border-none md:col-start-1 md:col-end-2 md:p-0"

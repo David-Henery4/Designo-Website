@@ -11,6 +11,7 @@ module.exports = {
       smTab: "45.62em", // 730px
       smDesk: "58.12em", // 930px
       desk: "70em", // 1120px
+      lgDesk: "84.06em", // 1345px
     },
     colors: {
       peach: "#E7816B",
@@ -43,6 +44,7 @@ module.exports = {
       gridTemplateColumns: {
         main: "24px repeat(10,1fr) 24px",
         mainTab: "40px repeat(10,1fr) 40px",
+        mainLgDesk: "165px repeat(10,1fr) 165px",
         footerTab: "repeat(3,1fr)",
       },
       backgroundImage: {

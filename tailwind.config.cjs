@@ -8,6 +8,7 @@ module.exports = {
     screens: {
       ...defaultTheme.screens,
       xsm: "30.31em", // 485px
+      lgMob: "35em", // 560px
       smTab: "45.62em", // 730px
       smDesk: "58.12em", // 930px
       desk: "70em", // 1120px
@@ -16,6 +17,7 @@ module.exports = {
     colors: {
       peach: "#E7816B",
       lightPeach: "#FFAD9B",
+      baige: "#FDF3F0",
       black: "#1D1C1E",
       white: "#ffffff",
       darkGrey: "#333136",
@@ -48,21 +50,29 @@ module.exports = {
         footerTab: "repeat(3,1fr)",
       },
       backgroundImage: {
-  
         // WEB DESIGN CARDS
-        "web-design-card-mob": "url('./src/assets/home/mobile/image-web-design.jpg')",
-        "web-design-card-tab": "url('./src/assets/home/tablet/image-web-design.jpg')",
-        "web-design-card-desk": "url('./src/assets/home/desktop/image-web-design-large.jpg')",
+        "web-design-card-mob":
+          "url('./src/assets/home/mobile/image-web-design.jpg')",
+        "web-design-card-tab":
+          "url('./src/assets/home/tablet/image-web-design.jpg')",
+        "web-design-card-desk":
+          "url('./src/assets/home/desktop/image-web-design-large.jpg')",
 
         // APP DESIGN CARDS
-        "app-design-card-mob": "url('./src/assets/home/mobile/image-app-design.jpg')",
-        "app-design-card-tab": "url('./src/assets/home/tablet/image-app-design.jpg')",
-        "app-design-card-desk": "url('./src/assets/home/desktop/image-app-design.jpg')",
+        "app-design-card-mob":
+          "url('./src/assets/home/mobile/image-app-design.jpg')",
+        "app-design-card-tab":
+          "url('./src/assets/home/tablet/image-app-design.jpg')",
+        "app-design-card-desk":
+          "url('./src/assets/home/desktop/image-app-design.jpg')",
 
         // GRAPHIC DESIGN CARDS
-        "graphic-design-card-mob": "url('./src/assets/home/mobile/image-graphic-design.jpg')",
-        "graphic-design-card-tab": "url('./src/assets/home/tablet/image-graphic-design.jpg')",
-        "graphic-design-card-desk": "url('./src/assets/home/desktop/image-graphic-design.jpg')",
+        "graphic-design-card-mob":
+          "url('./src/assets/home/mobile/image-graphic-design.jpg')",
+        "graphic-design-card-tab":
+          "url('./src/assets/home/tablet/image-graphic-design.jpg')",
+        "graphic-design-card-desk":
+          "url('./src/assets/home/desktop/image-graphic-design.jpg')",
       },
     },
   },

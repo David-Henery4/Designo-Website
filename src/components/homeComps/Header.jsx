@@ -24,7 +24,7 @@ const Header = () => {
       <div className="relative w-full grid place-items-center lg:flex-[1] lg:h-full">
         <div className="relative h-[430px] w-[215%] max-w-[655px] lg:h-full lg:w-[250%] lg:max-w-[630px] lg:top-[5px]">
           <img
-            className="absolute w-full top-[80%] left-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="absolute w-full top-[80%] left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
             src={headerImg}
             alt="Large Phone displayed on the hero section"
           />

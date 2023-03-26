@@ -1,8 +1,9 @@
 import SharedContent from "./SharedContent";
 import ProjectsLinkCard from "./ProjectsLinkCard";
-// import ProjectsLinkCard from "./ProjectsLinkCard";
+import DesignItemCard from "./DesignItemCard";
 
 export {
   SharedContent,
-  ProjectsLinkCard
+  ProjectsLinkCard,
+  DesignItemCard,
 }

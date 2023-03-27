@@ -35,6 +35,21 @@ import boxedItemImage from "./graphic-design/desktop/image-boxed-water.jpg";
 import changeItemImage from "./graphic-design/desktop/image-change.jpg";
 import scienceItemImage from "./graphic-design/desktop/image-science.jpg";
 
+//       ~About page images~
+// (Hero)
+import aboutHeroMob from "./about/mobile/image-about-hero.jpg"
+import aboutHeroTab from "./about/tablet/image-about-hero.jpg"
+import aboutHeroDesk from "./about/desktop/image-about-hero.jpg"
+// (Real Deal)
+import realDealMob from "./about/mobile/image-real-deal.jpg"
+import realDealTab from "./about/tablet/image-real-deal.jpg"
+import realDealDesk from "./about/desktop/image-real-deal.jpg"
+// (World Class)
+import worldClassMob from "./about/mobile/image-world-class-talent.jpg"
+import worldClassTab from "./about/tablet/image-world-class-talent.jpg"
+import worldClassDesk from "./about/desktop/image-world-class-talent.jpg"
+
+
 
 // **************** SVGS ********************
 
@@ -46,12 +61,18 @@ import {ReactComponent as ArrowRightIcon} from "./shared/desktop/icon-right-arro
 import { ReactComponent as PassionateIllustration } from "./home/desktop/illustration-passionate.svg";
 import { ReactComponent as FriendlyIllustration } from "./home/desktop/illustration-friendly.svg";
 import { ReactComponent as ResourcefulIllustration } from "./home/desktop/illustration-resourceful.svg";
+
 // ~SOCIAL ICONS~
 import {ReactComponent as FacebookIcon} from "./shared/desktop/icon-facebook.svg"
 import {ReactComponent as PinterestIcon} from "./shared/desktop/icon-pinterest.svg"
 import {ReactComponent as InstagramIcon} from "./shared/desktop/icon-instagram.svg"
 import {ReactComponent as TwitterIcon} from "./shared/desktop/icon-twitter.svg"
 import {ReactComponent as YoutubeIcon} from "./shared/desktop/icon-youtube.svg"
+
+// ~COUNTRY SVGs~
+import { ReactComponent as CanadaIllustration } from "./shared/desktop/illustration-canada.svg";
+import { ReactComponent as AustraliaIllustration } from "./shared/desktop/illustration-australia.svg";
+import { ReactComponent as UntitedKingdomIllustration } from "./shared/desktop/illustration-united-kingdom.svg";
 
 
 export {
@@ -77,6 +98,16 @@ export {
   scienceItemImage,
   todoItemImage,
   transferItemImage,
+  // ABOUT IMAGES
+  aboutHeroDesk,
+  aboutHeroMob,
+  aboutHeroTab,
+  realDealDesk,
+  realDealMob,
+  realDealTab,
+  worldClassDesk,
+  worldClassMob,
+  worldClassTab,
   // SVGs
   BurgerIcon,
   ArrowRightIcon,
@@ -88,4 +119,8 @@ export {
   PinterestIcon,
   TwitterIcon,
   YoutubeIcon,
+  // COUNTRY SVGs
+  AustraliaIllustration,
+  CanadaIllustration,
+  UntitedKingdomIllustration,
 }

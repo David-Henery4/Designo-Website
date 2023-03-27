@@ -4,6 +4,7 @@ import DesignItemCard from "./DesignItemCard";
 import ProjectsLinksSection from "./ProjectsLinksSection";
 import ItemPagesHeader from "./ItemPagesHeader";
 import DesignItemsContainer from "./DesignItemsContainer";
+import LocationOptionsSection from "./LocationOptionsSection";
 
 
 export {
@@ -13,4 +14,5 @@ export {
   ProjectsLinksSection,
   ItemPagesHeader,
   DesignItemsContainer,
+  LocationOptionsSection,
 }

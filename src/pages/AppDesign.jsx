@@ -1,9 +1,19 @@
-
+import {ItemPagesHeader, ProjectsLinksSection, DesignItemsContainer} from "../components";
+import {appDesignHeaderData} from "../data/itemHeaderData";
+import {appDesignData} from "../data/itemData"
+import {
+  graphicDesignCardData,
+  webDesignCardData,
+} from "../data/projectLinksData";
 
 const AppDesign = () => {
   return (
-    <div>AppDesign</div>
-  )
-}
+    <>
+      <ItemPagesHeader {...appDesignHeaderData} />
+      <DesignItemsContainer items={appDesignData} />
+      <ProjectsLinksSection projectCardDataOne={webDesignCardData} projectCardDataTwo={graphicDesignCardData}/>
+    </>
+  );
+};
 
-export default AppDesign
+export default AppDesign;

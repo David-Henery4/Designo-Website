@@ -7,7 +7,7 @@ import {
 
 const WebDesignItems = () => {
   return (
-  <section className="w-full col-start-2 col-end-12 grid gap-10">
+  <section className="w-full col-start-2 col-end-12 grid gap-10 smDesk:gap-[30px] smDesk:grid-cols-itemDesk">
     {webDesignData.map(item => {
       return <DesignItemCard {...item} key={item?.id}/>
     })}

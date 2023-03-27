@@ -47,6 +47,7 @@ module.exports = {
         main: "24px repeat(10,1fr) 24px",
         mainTab: "40px repeat(10,1fr) 40px",
         mainLgDesk: "165px repeat(10,1fr) 165px",
+        itemDesk: "repeat(auto-fill, minmax(350px,1fr))",
         footerTab: "repeat(3,1fr)",
       },
       backgroundImage: {

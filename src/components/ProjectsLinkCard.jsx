@@ -4,7 +4,7 @@ const ProjectsLinkCard = ({title,link,bgImage,changes = null}) => {
   const {mob,tab,desk} = bgImage
   return (
     <div
-      className={`relative w-full h-60 font-medium rounded-2xl overflow-hidden flex flex-col justify-center items-center gap-3  bg-no-repeat bg-cover bg-top xsm:h-52 xsm:bg-left ${mob} ${tab} ${desk} 
+      className={`relative text-white text-center p-6 w-full h-60 font-medium rounded-2xl overflow-hidden flex flex-col justify-center items-center gap-3  bg-no-repeat bg-cover bg-top xsm:h-52 xsm:bg-left ${mob} ${tab} ${desk} 
       ${changes?.colStart} ${changes?.colEnd} 
       ${changes?.rowStart} ${changes?.rowEnd} ${changes?.height}`}
     >

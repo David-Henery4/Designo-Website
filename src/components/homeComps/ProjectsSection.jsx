@@ -2,6 +2,7 @@ import {ProjectsLinkCard} from "../../components"
 import {appDesignCardData,graphicDesignCardData,webDesignCardData} from "../../data/projectLinksData";
 
 const ProjectsSection = () => {
+  // WIL ABSTRACT TO DATA FILE
   const webDesignHomeDesktopChanges = {
     colStart: "smDesk:col-start-1",
     colEnd: "smDesk:col-end-2",
@@ -19,7 +20,7 @@ const ProjectsSection = () => {
   };
   //
   return (
-    <section className="w-full text-white col-start-2 col-end-12 grid gap-6 smDesk:gap-y-6 smDesk:gap-x-[30px]">
+    <section className="w-full col-start-2 col-end-12 grid gap-6 smDesk:gap-y-6 smDesk:gap-x-[30px]">
       <ProjectsLinkCard
         {...webDesignCardData}
         changes={webDesignHomeDesktopChanges}

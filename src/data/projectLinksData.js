@@ -23,7 +23,7 @@ const appDesignCardData = {
 
 const graphicDesignCardData = {
   id: 3,
-  title: "GRAPHIC",
+  title: "GRAPHIC DESIGN",
   link: "#",
   bgImage: {
     mob: "bg-graphic-design-card-mob",

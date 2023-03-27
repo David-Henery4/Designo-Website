@@ -1,10 +1,13 @@
-import {WebHeader, WebDesignItems} from "../components/webDesignComps";
+import {webDesignData} from "../data/itemData"
+import {webDesignHeaderData} from "../data/itemHeaderData"
+import {ProjectsLinksSection, ItemPagesHeader, DesignItemsContainer} from "../components"
 
 const WebDesign = () => {
   return (
     <>
-      <WebHeader/>
-      <WebDesignItems/>
+      <ItemPagesHeader {...webDesignHeaderData}/>
+      <DesignItemsContainer items={webDesignData}/>
+      <ProjectsLinksSection/>
     </>
   )
 }

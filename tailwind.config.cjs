@@ -50,6 +50,8 @@ module.exports = {
         mainLgDesk: "165px repeat(10,1fr) 165px",
         itemDesk: "repeat(auto-fill, minmax(350px,1fr))",
         footerTab: "repeat(3,1fr)",
+        mapCardDesk: "1fr  31.6%",
+        mapCardDeskReverse: "31.6% 1fr",
       },
       backgroundImage: {
         // WEB DESIGN CARDS

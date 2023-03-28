@@ -35,6 +35,17 @@ import boxedItemImage from "./graphic-design/desktop/image-boxed-water.jpg";
 import changeItemImage from "./graphic-design/desktop/image-change.jpg";
 import scienceItemImage from "./graphic-design/desktop/image-science.jpg";
 
+//     ~location images~
+// (Canada)
+import canadaMapTab from "./locations/tablet/image-map-canada.png"
+import canadaMapDesk from "./locations/desktop/image-map-canada.png"
+// (Australia)
+import australiaMapTab from "./locations/tablet/image-map-australia.png";
+import australiaMapDesk from "./locations/desktop/image-map-australia.png";
+// (United Kingdom)
+import ukMapTab from "./locations/tablet/image-map-uk.png";
+import ukMapDesk from "./locations/desktop/image-map-united-kingdom.png";
+
 //       ~About page images~
 // (Hero)
 import aboutHeroMob from "./about/mobile/image-about-hero.jpg"
@@ -98,6 +109,13 @@ export {
   scienceItemImage,
   todoItemImage,
   transferItemImage,
+  // locations maps images
+  australiaMapDesk,
+  australiaMapTab,
+  canadaMapDesk,
+  canadaMapTab,
+  ukMapDesk,
+  ukMapTab,
   // ABOUT IMAGES
   aboutHeroDesk,
   aboutHeroMob,

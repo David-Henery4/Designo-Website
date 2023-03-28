@@ -4,13 +4,13 @@ const locationSectionData = [
   {
     id: 1,
     title: "CANADA",
-    image: AustraliaIllustration,
+    image: CanadaIllustration,
     link: "'",
   },
   {
     id: 2,
     title: "AUSTRALIA",
-    image: CanadaIllustration,
+    image: AustraliaIllustration,
     link: "#",
   },
   {

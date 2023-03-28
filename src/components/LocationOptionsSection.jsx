@@ -2,7 +2,7 @@ import locationSectionData from "../data/locationSectionData";
 
 const LocationOptionsSection = () => {
   return (
-  <section className="col-start-2 col-end-12">
+  <section className="col-start-2 col-end-12 flex flex-col justify-center items-center gap-12 sm:gap-14 smDesk:flex-row smDesk:gap-[30px]">
     {locationSectionData.map(loc => {
       return (
         <div key={loc.id} className="w-full flex flex-col justify-center items-center gap-12 text-center">

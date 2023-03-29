@@ -11,7 +11,7 @@ module.exports = {
       lgMob: "35em", // 560px
       smTab: "45.62em", // 730px
       smDesk: "58.12em", // 930px
-      large: "64em",
+      large: "64em", // 1024px
       desk: "70em", // 1120px
       lgDesk: "84.06em", // 1345px
     },

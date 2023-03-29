@@ -15,7 +15,7 @@ const ContactForm = () => {
   const [isMessageInputFull, setIsMessageInputFull] = useState(false);
   //
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-10">
+    <div className="w-full flex flex-col justify-center items-center gap-10 sm:gap-6 sm:items-end smDesk:flex-[1]">
       <form
         className="w-full grid gap-6 text-bodyMob leading-body font-medium text-left"
         action=""
@@ -33,7 +33,7 @@ const ContactForm = () => {
           <input
             id="name"
             name="name"
-            className="w-full px-4 py-3 outline-none bg-[transparent] border-b border-b-white"
+            className="w-full px-4 pb-3 outline-none bg-[transparent] border-b border-b-white"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -53,7 +53,7 @@ const ContactForm = () => {
           <input
             id="email"
             name="email"
-            className="w-full px-4 py-3 outline-none bg-[transparent] border-b border-b-white"
+            className="w-full px-4 pb-3 outline-none bg-[transparent] border-b border-b-white"
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -73,7 +73,7 @@ const ContactForm = () => {
           <input
             id="Phone"
             name="Phone"
-            className="w-full px-4 py-3 outline-none bg-[transparent] border-b border-b-white"
+            className="w-full px-4 pb-3 outline-none bg-[transparent] border-b border-b-white"
             type="text"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
@@ -93,11 +93,13 @@ const ContactForm = () => {
           <textarea
             name="message"
             id="message"
-            className="w-full min-h-[100px] px-4 py-3 outline-none border-b border-b-white bg-[transparent] resize-none"
+            className="w-full min-h-[100px] px-4 pb-3 outline-none border-b border-b-white bg-[transparent] resize-none"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             onFocus={() => setIsMessageInputFull(true)}
-            onBlur={() => checkIfInputLabelActive(message, setIsMessageInputFull)}
+            onBlur={() =>
+              checkIfInputLabelActive(message, setIsMessageInputFull)
+            }
           ></textarea>
         </div>
       </form>

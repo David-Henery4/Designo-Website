@@ -2,18 +2,18 @@ const navigationData = [
   {
     id: 1,
     name: "OUR COMPANY",
-    link: "#",
+    link: "/about",
   },
   {
     id: 2,
     name: "LOCATIONS",
-    link: "#",
+    link: "/locations",
   },
   {
     id: 3,
     name: "CONTACT",
-    link: "#",
+    link: "/contact",
   },
-]
+];
 
 export default navigationData

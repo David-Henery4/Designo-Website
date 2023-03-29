@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { logoDark, BurgerIcon } from "../assets";
 import navigationData from "../data/navigationData";
 
@@ -7,11 +8,13 @@ const Navbar = () => {
     
       {/* LEFT */}
       <div>
+        <Link to="/">
         <img
           className="w-48"
           src={logoDark}
           alt="Dark version of the 'DESIGNO' logo used in the top navigation bar"
-        />
+          />
+          </Link>
       </div>
       
       {/* RIGHT */}
@@ -21,9 +24,9 @@ const Navbar = () => {
           {navigationData.map(navDta => {
             return (
               <li key={navDta?.id}>
-                <a href={navDta?.link}>
+                <Link to={navDta?.link}>
                   {navDta?.name}
-                </a>
+                </Link>
               </li>
             );
           })}

@@ -5,19 +5,19 @@ const locationSectionData = [
     id: 1,
     title: "CANADA",
     image: CanadaIllustration,
-    link: "'",
+    link: "/locations",
   },
   {
     id: 2,
     title: "AUSTRALIA",
     image: AustraliaIllustration,
-    link: "#",
+    link: "/locations",
   },
   {
     id: 3,
     title: "UNITED KINGDOM",
     image: UntitedKingdomIllustration,
-    link: "#",
+    link: "/locations",
   },
 ];
 

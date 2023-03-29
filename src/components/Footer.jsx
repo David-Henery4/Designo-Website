@@ -1,13 +1,9 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import navigationData from "../data/navigationData";
+import socialIconsLinks from "../data/socialIconsLinks";
 import {
   logoLight,
-  FacebookIcon,
-  TwitterIcon,
-  YoutubeIcon,
-  PinterestIcon,
-  InstagramIcon,
 } from "../assets";
 
 const Footer = () => {
@@ -16,7 +12,7 @@ const Footer = () => {
   //
   useEffect(() => {
     pathname === "/contact" ? setIsFooter(true) : setIsFooter(false)
-  }, [])
+  }, [pathname])
   //
   return (
     <footer
@@ -51,16 +47,18 @@ const Footer = () => {
               : "pt-64  pb-16 md:pt-40 md:pb-20 smDesk:pt-36 lgDesk:pb-[72px]"
           }`}
         >
+          <Link to="/">
           <img
             className="pb-8 -mb-2 border-b border-b-white/10 md:border-none md:col-start-1 md:col-end-2 md:p-0"
             src={logoLight}
             alt="Light version of the 'DESIGNO' logo used in the footer of the site"
-          />
+            />
+            </Link>
           <ul className="w-full text-sm font-normal leading-[14px] tracking-[2px] flex flex-col justify-center items-center gap-8 md:col-start-2 md:col-end-4 md:flex-row md:self-end md:justify-end">
             {navigationData.map((navDta) => {
               return (
                 <li key={navDta?.id}>
-                  <a href={navDta?.link}>{navDta?.name}</a>
+                  <Link to={navDta?.link}>{navDta?.name}</Link>
                 </li>
               );
             })}
@@ -82,31 +80,15 @@ const Footer = () => {
 
           {/* SOCIALS ICON LINKS */}
           <ul className="w-full flex justify-center items-center gap-4 md:justify-end">
-            <li>
-              <a href="#">
-                <FacebookIcon />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <YoutubeIcon />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <TwitterIcon />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <PinterestIcon />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <InstagramIcon />
-              </a>
-            </li>
+            {socialIconsLinks?.map(iconLink => {
+              return (
+                <li key={iconLink?.id}>
+                  <Link to={iconLink?.link}>
+                    {<iconLink.icon/>}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>

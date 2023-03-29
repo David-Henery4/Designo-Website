@@ -4,6 +4,7 @@ import AppDesign from "./AppDesign";
 import GraphicDesign from "./GraphicDesign";
 import About from "./About";
 import Locations from "./Locations";
+import Contact from "./Contact";
 
 export {
   Home,
@@ -12,4 +13,5 @@ export {
   GraphicDesign,
   About,
   Locations,
+  Contact,
 }

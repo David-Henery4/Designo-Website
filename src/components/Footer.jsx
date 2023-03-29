@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import navigationData from "../data/navigationData";
 import {
   logoLight,
@@ -9,10 +11,23 @@ import {
 } from "../assets";
 
 const Footer = () => {
+  const [isFooter, setIsFooter] = useState(false)
+  const {pathname} = useLocation()
+  //
+  useEffect(() => {
+    pathname === "/contact" ? setIsFooter(true) : setIsFooter(false)
+  }, [])
+  //
   return (
-    <footer className="grid grid-cols-main col-start-1 col-end-13 md:grid-cols-mainTab lgDesk:grid-cols-mainLgDesk">
+    <footer
+      className={`grid grid-cols-main col-start-1 col-end-13 md:grid-cols-mainTab lgDesk:grid-cols-mainLgDesk`}
+    >
       {/* CTA */}
-      <section className="col-start-2 col-end-12 row-start-1 row-end-7 z-10 w-full px-6 py-16 rounded-2xl text-white bg-peach flex flex-col justify-center items-center gap-8 md:py-14 md:row-end-5 smDesk:flex-row smDesk:justify-between smDesk:px-12 lg:py-11 lg:px-16 desk:px-24">
+      <section
+        className={`col-start-2 col-end-12 row-start-1 row-end-7 z-10 w-full px-6 py-16 rounded-2xl text-white bg-peach flex flex-col justify-center items-center gap-8 md:py-14 md:row-end-5 smDesk:flex-row smDesk:justify-between smDesk:px-12 lg:py-11 lg:px-16 desk:px-24 ${
+          isFooter ? "hidden" : "flex"
+        }`}
+      >
         <div className="w-full text-center grid gap-2 xsm:gap-6 justify-items-center smDesk:w-auto smDesk:justify-items-start smDesk:text-left">
           <h3 className="text-head1Mob leading-9 font-medium max-w-xs xsm:text-head2 xsm:leading-10">
             Let’s talk about your project
@@ -28,8 +43,14 @@ const Footer = () => {
       </section>
 
       {/* FOOTER CONTENT */}
-      <section className="col-start-1 col-end-13 row-start-4 row-end-[13] w-full bg-black md:px-10 lgDesk:px-[165px]">
-        <div className="text-white pt-64 px-6 pb-16 grid gap-10 justify-center md:pt-40 md:grid-cols-footerTab smDesk:pt-36">
+      <section className="col-start-1 col-end-13 row-start-4 row-end-[13] w-full bg-black">
+        <div
+          className={`text-white grid gap-10 justify-center px-6 md:px-10 md:grid-cols-footerTab  lgDesk:px-[165px] ${
+            isFooter
+              ? "py-16 md:py-20 lgDesk:py-[72px]"
+              : "pt-64  pb-16 md:pt-40 md:pb-20 smDesk:pt-36 lgDesk:pb-[72px]"
+          }`}
+        >
           <img
             className="pb-8 -mb-2 border-b border-b-white/10 md:border-none md:col-start-1 md:col-end-2 md:p-0"
             src={logoLight}

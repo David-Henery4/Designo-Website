@@ -86,6 +86,9 @@ import { ReactComponent as CanadaIllustration } from "./shared/desktop/illustrat
 import { ReactComponent as AustraliaIllustration } from "./shared/desktop/illustration-australia.svg";
 import { ReactComponent as UntitedKingdomIllustration } from "./shared/desktop/illustration-united-kingdom.svg";
 
+// ~Error-contact-form-icon~
+import {ReactComponent as ErrorIcon} from "./contact/desktop/icon-error.svg"
+
 
 export {
   // IMGs
@@ -143,4 +146,6 @@ export {
   AustraliaIllustration,
   CanadaIllustration,
   UntitedKingdomIllustration,
+  //
+  ErrorIcon,
 }

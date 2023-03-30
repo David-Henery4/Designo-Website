@@ -1,5 +1,7 @@
-import { useState } from "react";
-import checkIfInputLabelActive from "../../functions/checkIfInputLabelActive";
+import { useState } from "react"
+import checkIfInputLabelActive from "../../functions/checkIfInputLabelActive"
+import useValidation from "../../hooks/useValidation";
+import {ErrorMsg} from "../../components/contactComps"
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -13,6 +15,30 @@ const ContactForm = () => {
   //
   const [message, setMessage] = useState("");
   const [isMessageInputFull, setIsMessageInputFull] = useState(false);
+  //
+  const handleSubmit = (validatedValues) => {
+    // console.log(validatedValues)
+    console.log("Form values submitted")
+    setEmail("")
+    setName("")
+    setMessage("")
+    setPhone("")
+    setIsNameInputFull(false)
+    setIsEmailInputFull(false)
+    setIsPhoneInputFull(false)
+    setIsMessageInputFull(false)
+  }
+  //
+  const {validation, isErrorList} = useValidation(handleSubmit)
+  //
+  const handleValuesCheck = () => {
+    validation({
+      name,
+      email,
+      phone,
+      message
+    })
+  }
   //
   return (
     <div className="w-full flex flex-col justify-center items-center gap-10 sm:gap-6 sm:items-end smDesk:flex-[1]">
@@ -30,10 +56,16 @@ const ContactForm = () => {
           >
             Name
           </label>
+          {/* Error label */}
+          {isErrorList?.name?.isError && (
+            <ErrorMsg msg={isErrorList?.name?.msg} />
+          )}
           <input
             id="name"
             name="name"
-            className="w-full px-4 pb-3 outline-none bg-[transparent] border-b border-b-white"
+            className={`w-full px-4 pb-3 outline-none bg-[transparent] border-b-white transition-all ${
+              isNameInputFull ? "border-b-[3px]" : "border-b"
+            }`}
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -50,10 +82,16 @@ const ContactForm = () => {
           >
             Email
           </label>
+          {/* Error label */}
+          {isErrorList?.email?.isError && (
+            <ErrorMsg msg={isErrorList?.email?.msg} />
+          )}
           <input
             id="email"
             name="email"
-            className="w-full px-4 pb-3 outline-none bg-[transparent] border-b border-b-white"
+            className={`w-full px-4 pb-3 outline-none bg-[transparent] border-b-white transition-all ${
+              isEmailInputFull ? "border-b-[3px]" : "border-b"
+            }`}
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -70,10 +108,16 @@ const ContactForm = () => {
           >
             Phone
           </label>
+          {/* Error label */}
+          {isErrorList?.phone?.isError && (
+            <ErrorMsg msg={isErrorList?.phone?.msg} />
+          )}
           <input
             id="Phone"
             name="Phone"
-            className="w-full px-4 pb-3 outline-none bg-[transparent] border-b border-b-white"
+            className={`w-full px-4 pb-3 outline-none bg-[transparent] border-b-white transition-all ${
+              isPhoneInputFull ? "border-b-[3px]" : "border-b"
+            }`}
             type="text"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
@@ -90,10 +134,16 @@ const ContactForm = () => {
           >
             Your Message
           </label>
+          {/* Error label */}
+          {isErrorList?.message?.isError && (
+            <ErrorMsg isMessageInput={true} msg={isErrorList?.message?.msg} />
+          )}
           <textarea
             name="message"
             id="message"
-            className="w-full min-h-[100px] px-4 pb-3 outline-none border-b border-b-white bg-[transparent] resize-none"
+            className={`w-full min-h-[100px] px-4 pb-3 outline-none border-b-white bg-[transparent] resize-none transition-all ${
+              isMessageInputFull ? "border-b-[3px]" : "border-b"
+            }`}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             onFocus={() => setIsMessageInputFull(true)}
@@ -106,7 +156,10 @@ const ContactForm = () => {
       {/* SUBMIT */}
       <button
         className="w-40 h-14 bg-white text-black rounded-lg tracking-btn font-medium justify-self-center hover:bg-lightPeach hover:text-white active:text-black active:bg-white"
-        onClick={(e) => e.preventDefault()}
+        onClick={(e) => {
+          e.preventDefault();
+          handleValuesCheck();
+        }}
       >
         SUBMIT
       </button>

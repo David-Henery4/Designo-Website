@@ -66,6 +66,7 @@ import worldClassDesk from "./about/desktop/image-world-class-talent.jpg"
 
 // ~Burger~
 import {ReactComponent as BurgerIcon} from "./shared/mobile/icon-hamburger.svg"
+import {ReactComponent as CloseIcon} from "./shared/mobile/icon-close.svg"
 // ~Right arrow icon
 import {ReactComponent as ArrowRightIcon} from "./shared/desktop/icon-right-arrow.svg"
 // ~Home page illustrations~
@@ -128,6 +129,7 @@ export {
   worldClassTab,
   // SVGs
   BurgerIcon,
+  CloseIcon,
   ArrowRightIcon,
   PassionateIllustration,
   FriendlyIllustration,

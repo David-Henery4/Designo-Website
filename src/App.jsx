@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import {
   Home,
   WebDesign,
@@ -21,6 +21,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="locations" element={<Locations />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Route>
     </Routes>
   );

@@ -5,6 +5,7 @@ import ProjectsLinksSection from "./ProjectsLinksSection";
 import ItemPagesHeader from "./ItemPagesHeader";
 import DesignItemsContainer from "./DesignItemsContainer";
 import LocationOptionsSection from "./LocationOptionsSection";
+import Sidebar from "./Sidebar";
 
 
 export {
@@ -15,4 +16,5 @@ export {
   ItemPagesHeader,
   DesignItemsContainer,
   LocationOptionsSection,
+  Sidebar,
 }

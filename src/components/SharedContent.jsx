@@ -1,32 +1,42 @@
-import { useState } from "react"
-import { Outlet } from "react-router-dom"
-import Navbar from "./Navbar"
-import Footer from "./Footer"
-import Sidebar from "./Sidebar"
-import Overlay from "./Overlay"
+import { useState, useLayoutEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Sidebar from "./Sidebar";
+import Overlay from "./Overlay";
 
+// SCROLL TO TOP AFTER NAVIGATION
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children;
+};
 
 const SharedContent = () => {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
   //
   return (
     <main className="App relative max-w-[1440px] m-auto font-jost grid grid-cols-main gap-y-20 md:grid-cols-mainTab smDesk:gap-y-40 lgDesk:grid-cols-mainLgDesk">
-      <Overlay
-        setIsSidebarActive={setIsSidebarActive}
-        isSidebarActive={isSidebarActive}
-      />
-      <Navbar
-        setIsSidebarActive={setIsSidebarActive}
-        isSidebarActive={isSidebarActive}
-      />
-      <Sidebar
-        setIsSidebarActive={setIsSidebarActive}
-        isSidebarActive={isSidebarActive}
-      />
-      <Outlet />
-      <Footer />
+      <Wrapper>
+        <Overlay
+          setIsSidebarActive={setIsSidebarActive}
+          isSidebarActive={isSidebarActive}
+        />
+        <Navbar
+          setIsSidebarActive={setIsSidebarActive}
+          isSidebarActive={isSidebarActive}
+        />
+        <Sidebar
+          setIsSidebarActive={setIsSidebarActive}
+          isSidebarActive={isSidebarActive}
+        />
+        <Outlet />
+        <Footer />
+      </Wrapper>
     </main>
   );
-}
+};
 
-export default SharedContent
+export default SharedContent;

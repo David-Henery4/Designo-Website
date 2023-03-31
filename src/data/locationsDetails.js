@@ -20,6 +20,7 @@ const locationsDetails = [
       tab: canadaMapTab,
       desk: canadaMapDesk,
     },
+    coords: [43.64395, -79.394872],
   },
   {
     id: 2,
@@ -38,6 +39,7 @@ const locationsDetails = [
       tab: australiaMapTab,
       desk: australiaMapDesk,
     },
+    coords: [-30.329065, 149.788391],
   },
   {
     id: 3,
@@ -56,6 +58,7 @@ const locationsDetails = [
       tab: ukMapTab,
       desk: ukMapDesk,
     },
+    coords: [51.7359, -3.8705],
   },
 ];
 

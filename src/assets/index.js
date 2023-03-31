@@ -89,6 +89,13 @@ import { ReactComponent as UntitedKingdomIllustration } from "./shared/desktop/i
 // ~Error-contact-form-icon~
 import {ReactComponent as ErrorIcon} from "./contact/desktop/icon-error.svg"
 
+//     ~BACKGROUND-SVGS~
+// (Home-page)
+// (About-page)
+// (Contact-page)
+// (shared-bg-SVGs)
+
+
 
 export {
   // IMGs

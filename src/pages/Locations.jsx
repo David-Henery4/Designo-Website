@@ -1,4 +1,6 @@
 import locationsDetails from "../data/locationsDetails";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+
 
 const Locations = () => {
   return (
@@ -10,20 +12,24 @@ const Locations = () => {
             className="w-full grid group sm:gap-8 smDesk:grid-cols-mapCardDesk even:smDesk:grid-cols-mapCardDeskReverse"
           >
             {/* MAP */}
-            <div className="sm:rounded-2xl sm:overflow-hidden smDesk:col-start-2 smDesk:col-end-3 smDesk:row-start-1 smDesk:row-end-2 group-even:smDesk:col-start-1 group-even:smDesk:col-end-2">
-              <picture>
-                <source
-                  srcSet={loc.mapImage.desk}
-                  media="(min-width:58.12em)"
+            <div className="h-80 sm:h-[326px] sm:rounded-2xl sm:overflow-hidden smDesk:col-start-2 smDesk:col-end-3 smDesk:row-start-1 smDesk:row-end-2 group-even:smDesk:col-start-1 group-even:smDesk:col-end-2">
+              <MapContainer
+                style={{ height: "100%", width: "100%" }}
+                className="h-full w-full"
+                center={loc.coords}
+                zoom={13}
+                scrollWheelZoom={false}
+              >
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <source srcSet={loc.mapImage.tab} media="(min-width:30.31em)" />
-                <img
-                  className="w-full object-cover smDesk:h-full"
-                  src={loc?.mapImage?.desk}
-                  alt={`map of the office location in ${loc?.name}`}
-                  srcSet={loc?.mapImage?.desk}
-                />
-              </picture>
+                <Marker position={loc.coords}>
+                  <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                  </Popup>
+                </Marker>
+              </MapContainer>
             </div>
 
             {/* DETAILS */}
@@ -61,3 +67,17 @@ const Locations = () => {
 };
 
 export default Locations;
+
+
+// old image
+
+{/* <picture>
+  <source srcSet={loc.mapImage.desk} media="(min-width:58.12em)" />
+  <source srcSet={loc.mapImage.tab} media="(min-width:30.31em)" />
+  <img
+    className="w-full object-cover smDesk:h-full"
+    src={loc?.mapImage?.desk}
+    alt={`map of the office location in ${loc?.name}`}
+    srcSet={loc?.mapImage?.desk}
+  />
+</picture>; */}

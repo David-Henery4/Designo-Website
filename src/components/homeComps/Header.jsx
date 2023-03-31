@@ -1,10 +1,11 @@
-import { headerImg, headerImgCropped } from "../../assets";
+import { headerImg, headerImgCropped, HomeHeroBgPattern } from "../../assets";
 
 const Header = () => {
   return (
-    <header className="w-full text-center bg-peach text-white col-start-1 col-end-13 flex flex-col justify-center items-center pt-20 overflow-hidden px-6 sm:col-start-2 sm:col-end-12 sm:rounded-2xl lg:flex-row lg:py-36 lg:px-16 lg:justify-between desk:px-24">
+    <header className="relative w-full text-center bg-peach text-white col-start-1 col-end-13 flex flex-col justify-center items-center pt-20 overflow-hidden px-6 sm:col-start-2 sm:col-end-12 sm:rounded-2xl lg:flex-row lg:py-36 lg:px-16 lg:justify-between desk:px-24">
+      <HomeHeroBgPattern className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/3 z-0 smTab:left-[60%]"/>
       {/* TEXT */}
-      <div className="flex flex-col justify-center items-center gap-4 xsm:gap-9 lg:flex-[2] lg:items-start lg:text-left lg:gap-10">
+      <div className="relative flex flex-col justify-center items-center gap-4 xsm:gap-9 lg:flex-[2] lg:items-start lg:text-left lg:gap-10">
         <h1 className="text-head1Mob leading-9 font-medium max-w-[489px] xsm:text-5xl xsm:leading-head1">
           Award-winning custom designs and digital branding solutions
         </h1>

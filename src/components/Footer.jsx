@@ -4,6 +4,7 @@ import navigationData from "../data/navigationData";
 import socialIconsLinks from "../data/socialIconsLinks";
 import {
   logoLight,
+  CallToActionBgPattern,
 } from "../assets";
 
 const Footer = () => {
@@ -20,10 +21,11 @@ const Footer = () => {
     >
       {/* CTA */}
       <section
-        className={`col-start-2 col-end-12 row-start-1 row-end-7 z-10 w-full px-6 py-16 rounded-2xl text-white bg-peach flex flex-col justify-center items-center gap-8 md:py-14 md:row-end-5 smDesk:flex-row smDesk:justify-between smDesk:px-12 lg:py-11 lg:px-16 desk:px-24 ${
+        className={`relative col-start-2 col-end-12 row-start-1 row-end-7 z-10 w-full px-6 py-16 rounded-2xl text-white bg-peach flex flex-col justify-center items-center gap-8 overflow-hidden md:py-14 md:row-end-5 smDesk:flex-row smDesk:justify-between smDesk:px-12 lg:py-11 lg:px-16 desk:px-24 ${
           isFooter ? "hidden" : "flex"
         }`}
       >
+        <CallToActionBgPattern className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
         <div className="w-full text-center grid gap-2 xsm:gap-6 justify-items-center smDesk:w-auto smDesk:justify-items-start smDesk:text-left">
           <h3 className="text-head1Mob leading-9 font-medium max-w-xs xsm:text-head2 xsm:leading-10">
             Let’s talk about your project
@@ -48,12 +50,12 @@ const Footer = () => {
           }`}
         >
           <Link to="/">
-          <img
-            className="pb-8 -mb-2 border-b border-b-white/10 md:border-none md:col-start-1 md:col-end-2 md:p-0"
-            src={logoLight}
-            alt="Light version of the 'DESIGNO' logo used in the footer of the site"
+            <img
+              className="pb-8 -mb-2 border-b border-b-white/10 md:border-none md:col-start-1 md:col-end-2 md:p-0"
+              src={logoLight}
+              alt="Light version of the 'DESIGNO' logo used in the footer of the site"
             />
-            </Link>
+          </Link>
           <ul className="w-full text-sm font-normal leading-[14px] tracking-[2px] flex flex-col justify-center items-center gap-8 md:col-start-2 md:col-end-4 md:flex-row md:self-end md:justify-end">
             {navigationData.map((navDta) => {
               return (
@@ -80,12 +82,10 @@ const Footer = () => {
 
           {/* SOCIALS ICON LINKS */}
           <ul className="w-full flex justify-center items-center gap-4 md:justify-end">
-            {socialIconsLinks?.map(iconLink => {
+            {socialIconsLinks?.map((iconLink) => {
               return (
                 <li key={iconLink?.id}>
-                  <Link to={iconLink?.link}>
-                    {<iconLink.icon/>}
-                  </Link>
+                  <Link to={iconLink?.link}>{<iconLink.icon />}</Link>
                 </li>
               );
             })}

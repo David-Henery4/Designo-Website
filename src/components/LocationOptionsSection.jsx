@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import locationSectionData from "../data/locationSectionData";
+import {SmallCircleBgPattern} from "../assets"
 
 const LocationOptionsSection = () => {
   return (
@@ -10,7 +11,10 @@ const LocationOptionsSection = () => {
           key={loc.id}
           className="w-full flex flex-col justify-center items-center gap-12 text-center"
         >
-          <loc.image />
+          <div className="relative">
+            <SmallCircleBgPattern className="absolute top-0 left-0"/>
+            <loc.image />
+          </div>
           <div className="grid gap-8 justify-items-center">
             <h3 className="text-xl leading-head3 tracking-[5px] font-medium">
               {loc.title}

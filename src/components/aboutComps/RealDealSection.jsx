@@ -1,12 +1,13 @@
-import {realDealDesk, realDealMob, realDealTab} from "../../assets"
+import {realDealDesk, realDealMob, realDealTab, LeafBgPattern} from "../../assets"
 
 const RealDealSection = () => {
   return (
     <section
-      className="col-start-1 col-end-13 bg-baige sm:col-start-2 sm:col-end-12 sm:rounded-2xl overflow-hidden smDesk:flex smDesk:justify-center smDesk:items-center smDesk:flex-row-reverse
+      className="relative col-start-1 col-end-13 bg-baige sm:col-start-2 sm:col-end-12 sm:rounded-2xl smDesk:flex smDesk:justify-center smDesk:items-center smDesk:flex-row-reverse
     "
     >
-      <div className="w-full smDesk:h-full smDesk:flex-[1]">
+      <LeafBgPattern className="absolute hidden lg:block lg:top-[124px] lg:-z-10 lg:-right-10 lgDesk:-right-[165px]" />
+      <div className="w-full overflow-hidden sm:rounded-t-2xl smDesk:rounded-l-none smDesk:rounded-r-2xl smDesk:h-full smDesk:flex-[1]">
         <picture className="w-full">
           <source srcSet={realDealDesk} media="(min-width:58.12em)" />
           <source srcSet={realDealTab} media="(min-width:30.31em)" />

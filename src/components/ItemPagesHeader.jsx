@@ -11,7 +11,6 @@ import {
 const ItemPagesHeader = ({ title, desc }) => {
   const { pathname } = useLocation();
   //
-  console.log(pathname === "/web-design");
   return (
     <header className="relative w-full text-center bg-peach text-white overflow-hidden col-start-1 col-end-13 flex flex-col justify-center items-center px-6 py-24 gap-6 sm:col-start-2 sm:col-end-12 sm:rounded-2xl">
       <DesignPagesIntroMobilePattern className="absolute -top-3 -left-[515px] pointer-events-none sm:hidden" />

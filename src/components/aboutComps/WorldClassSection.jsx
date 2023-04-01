@@ -1,12 +1,13 @@
-import {worldClassDesk, worldClassMob, worldClassTab} from "../../assets"
+import {worldClassDesk, worldClassMob, worldClassTab, LeafBgPattern} from "../../assets"
 
 const WorldClassSection = () => {
   return (
     <section
-      className="col-start-1 col-end-13 -mt-20 bg-baige sm:col-start-2 sm:col-end-12 sm:rounded-2xl overflow-hidden sm:m-0 smDesk:flex smDesk:justify-center smDesk:items-center
+      className="relative col-start-1 col-end-13 -mt-20 bg-baige sm:col-start-2 sm:col-end-12 sm:rounded-2xl sm:m-0 smDesk:flex smDesk:justify-center smDesk:items-center
     "
     >
-      <div className="w-full smDesk:h-full smDesk:flex-[1]">
+      <LeafBgPattern className="hidden pointer-events-none absolute -z-10 -top-[285px] lg:block lg:-left-10 lgDesk:-left-[165px]" />
+      <div className="w-full overflow-hidden sm:rounded-t-2xl smDesk:rounded-l-2xl smDesk:rounded-r-none smDesk:h-full smDesk:flex-[1]">
         <picture className="w-full">
           <source srcSet={worldClassDesk} media="(min-width:58.12em)" />
           <source srcSet={worldClassTab} media="(min-width:30.31em)" />

@@ -25,7 +25,7 @@ const Footer = () => {
           isFooter ? "hidden" : "flex"
         }`}
       >
-        <CallToActionBgPattern className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
+        <CallToActionBgPattern className="absolute -z-10 top-1/2 left-[60%] -translate-x-1/2 -translate-y-1/2"/>
         <div className="w-full text-center grid gap-2 xsm:gap-6 justify-items-center smDesk:w-auto smDesk:justify-items-start smDesk:text-left">
           <h3 className="text-head1Mob leading-9 font-medium max-w-xs xsm:text-head2 xsm:leading-10">
             Let’s talk about your project

@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import locationSectionData from "../data/locationSectionData";
-import {SmallCircleBgPattern} from "../assets"
+import {SmallCircleBgPattern, LeafBgPattern} from "../assets"
 
 const LocationOptionsSection = () => {
+  const {pathname} = useLocation()
+  //
   return (
-  <section className="col-start-2 col-end-12 flex flex-col justify-center items-center gap-12 sm:gap-14 smDesk:flex-row smDesk:gap-[30px]">
+  <section className="relative col-start-2 col-end-12 flex flex-col justify-center items-center gap-12 sm:gap-14 smDesk:flex-row smDesk:gap-[30px]">
     {locationSectionData.map(loc => {
       return (
         <div
@@ -29,6 +31,10 @@ const LocationOptionsSection = () => {
         </div>
       );
     })}
+    {
+    pathname === "/contact" &&
+    <LeafBgPattern className="hidden absolute -bottom-[88%] -right-[15%] -z-10 large:block"/>
+    }
   </section>
   )
 };

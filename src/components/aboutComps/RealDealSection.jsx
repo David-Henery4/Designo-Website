@@ -6,7 +6,7 @@ const RealDealSection = () => {
       className="relative col-start-1 col-end-13 bg-baige sm:col-start-2 sm:col-end-12 sm:rounded-2xl smDesk:flex smDesk:justify-center smDesk:items-center smDesk:flex-row-reverse
     "
     >
-      <LeafBgPattern className="absolute hidden lg:block lg:top-[124px] lg:-z-10 lg:-right-10 lgDesk:-right-[165px]" />
+      <LeafBgPattern className="absolute hidden lg:block lg:-top-[55%] lg:-z-10 lg:-right-[52%]" />
       <div className="w-full overflow-hidden sm:rounded-t-2xl smDesk:rounded-l-none smDesk:rounded-r-2xl smDesk:h-full smDesk:flex-[1]">
         <picture className="w-full">
           <source srcSet={realDealDesk} media="(min-width:58.12em)" />

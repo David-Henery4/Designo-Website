@@ -18,7 +18,7 @@ const SharedContent = () => {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
   //
   return (
-    <main className="App relative max-w-[1440px] m-auto font-jost grid grid-cols-main gap-y-20 md:grid-cols-mainTab smDesk:gap-y-40 lgDesk:grid-cols-mainLgDesk">
+    <main className="App overflow-hidden relative max-w-[1440px] m-auto font-jost grid grid-cols-main gap-y-20 md:grid-cols-mainTab smDesk:gap-y-40 lgDesk:grid-cols-mainLgDesk">
       <Wrapper>
         <Overlay
           setIsSidebarActive={setIsSidebarActive}

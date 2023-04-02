@@ -21,11 +21,11 @@ const Footer = () => {
     >
       {/* CTA */}
       <section
-        className={`relative col-start-2 col-end-12 row-start-1 row-end-7 z-10 w-full px-6 py-16 rounded-2xl text-white bg-peach flex flex-col justify-center items-center gap-8 overflow-hidden md:py-14 md:row-end-5 smDesk:flex-row smDesk:justify-between smDesk:px-12 lg:py-11 lg:px-16 desk:px-24 ${
+        className={`relative col-start-2 col-end-12 row-start-1 row-end-7 z-10 w-full px-6 py-16 mx-auto rounded-2xl text-white bg-peach flex flex-col justify-center items-center gap-8 overflow-hidden md:py-14 md:row-end-5  smDesk:flex-row smDesk:justify-between smDesk:px-12 lg:py-11 lg:px-16 desk:px-24 lgDesk:max-w-[1110px] ${
           isFooter ? "hidden" : "flex"
         }`}
       >
-        <CallToActionBgPattern className="absolute -z-10 top-1/2 left-[60%] -translate-x-1/2 -translate-y-1/2"/>
+        <CallToActionBgPattern className="absolute -z-10 top-1/2 left-[60%] -translate-x-1/2 -translate-y-1/2" />
         <div className="w-full text-center grid gap-2 xsm:gap-6 justify-items-center smDesk:w-auto smDesk:justify-items-start smDesk:text-left">
           <h3 className="text-head1Mob leading-9 font-medium max-w-xs xsm:text-head2 xsm:leading-10">
             Let’s talk about your project
@@ -43,7 +43,7 @@ const Footer = () => {
       {/* FOOTER CONTENT */}
       <section className="col-start-1 col-end-13 row-start-4 row-end-[13] w-full bg-black">
         <div
-          className={`text-white grid gap-10 justify-center px-6 md:px-10 md:grid-cols-footerTab  lgDesk:px-[165px] ${
+          className={`text-white grid gap-10 justify-center mx-auto px-6 md:px-10 md:grid-cols-footerTab smDesk:max-w-[1440px]  lgDesk:px-[165px] ${
             isFooter
               ? "py-16 md:py-20 lgDesk:py-[72px]"
               : "pt-64  pb-16 md:pt-40 md:pb-20 smDesk:pt-36 lgDesk:pb-[72px]"

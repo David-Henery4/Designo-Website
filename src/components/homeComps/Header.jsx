@@ -1,4 +1,5 @@
-import { headerImg, headerImgCropped, HomeHeroBgPattern } from "../../assets";
+import { Link } from "react-router-dom";
+import { headerImg,  HomeHeroBgPattern } from "../../assets";
 
 const Header = () => {
   return (
@@ -15,9 +16,9 @@ const Header = () => {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <button className="w-40 h-14 bg-white text-black rounded-lg tracking-btn font-medium hover:bg-lightPeach hover:text-white active:text-black active:bg-white">
+          <Link to="/about" className="w-40 h-14 grid place-items-center bg-white text-black rounded-lg tracking-btn font-medium hover:bg-lightPeach hover:text-white active:text-black active:bg-white">
             LEARN MORE
-          </button>
+          </Link>
         </div>
       </div>
 

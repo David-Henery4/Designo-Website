@@ -7,7 +7,7 @@ import navigationData from "../data/navigationData";
 const Navbar = ({ isSidebarActive, setIsSidebarActive }) => {
   //
   return (
-    <nav className="relative py-9 -mb-20 col-start-2 col-end-12 flex justify-between items-start sm:items-center sm:py-16 smDesk:-mb-40">
+    <nav className="relative w-full py-9  col-start-2 col-end-12 flex justify-between items-start sm:items-center sm:py-16  lgDesk:max-w-[1110px] lgDesk:mx-auto">
       {/* LEFT */}
       <div>
         <Link to="/">

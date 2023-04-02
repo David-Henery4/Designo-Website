@@ -3,7 +3,7 @@ import {worldClassDesk, worldClassMob, worldClassTab, LeafBgPattern} from "../..
 const WorldClassSection = () => {
   return (
     <section
-      className="relative col-start-1 col-end-13 -mt-20 bg-baige sm:col-start-2 sm:col-end-12 sm:rounded-2xl sm:m-0 smDesk:flex smDesk:justify-center smDesk:items-center
+      className="relative col-start-1 col-end-13 -mt-[120px] bg-baige sm:col-start-2 sm:col-end-12 sm:rounded-2xl sm:m-0 smDesk:flex smDesk:justify-center smDesk:items-center
     "
     >
       <LeafBgPattern className="hidden pointer-events-none absolute -z-10 -top-[285px] lg:block lg:-left-10 lgDesk:-left-[165px]" />

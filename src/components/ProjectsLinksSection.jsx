@@ -1,4 +1,3 @@
-import {appDesignCardData, graphicDesignCardData} from "../data/projectLinksData"
 import {ProjectsLinkCard} from "../components"
 
 const ProjectsLinksSection = ({projectCardDataOne, projectCardDataTwo}) => {

@@ -1,6 +1,6 @@
 import {ContactForm} from "../components/contactComps"
 import {LocationOptionsSection} from "../components"
-import {ContactHeroBgPatternDesktop, ContactHeroBgPatternMobile, LeafBgPattern} from "../assets"
+import {ContactHeroBgPatternDesktop, ContactHeroBgPatternMobile} from "../assets"
 
 const Contact = () => {
   //

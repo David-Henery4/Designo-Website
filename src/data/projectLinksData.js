@@ -32,25 +32,31 @@ const graphicDesignCardData = {
   },
 };
 
+// ## CHANGES ADDED TO PROJECTS CARDS ON HOME PAGE,
+// IN ORDER TO FIT THE LAYOUT
+  const webDesignHomeDesktopChanges = {
+    colStart: "smDesk:col-start-1",
+    colEnd: "smDesk:col-end-2",
+    rowStart: "smDesk:row-start-1",
+    rowEnd: "smDesk:row-end-3",
+    height: "smDesk:h-full",
+  };
+  const appDesignHomeDesktopChanges = {
+    colStart: "smDesk:col-start-2",
+    colEnd: "smDesk:col-end-3",
+    height: "smDesk:h-[308px]",
+  };
+  const graphicDesignHomeDesktopChanges = {
+    height: "smDesk:h-[308px]",
+  };
+
 export {
   appDesignCardData,
   graphicDesignCardData,
-  webDesignCardData
+  webDesignCardData,
+  appDesignHomeDesktopChanges,
+  graphicDesignHomeDesktopChanges,
+  webDesignHomeDesktopChanges
 }
 
-// MAYBE come back to
 
-// const projectLinksData = [
-//   {
-//     id: 1,
-//     title: "",
-//     link: "#",
-//     bgImage: {
-//       mob: "",
-//       tab: "",
-//       desk: "",
-//     }
-//   },
-// ]
-
-// export default projectLinksData

@@ -14,7 +14,7 @@ const LocationOptionsSection = () => {
           className="w-full flex flex-col justify-center items-center gap-12 text-center"
         >
           <div className="relative">
-            <SmallCircleBgPattern className="absolute top-0 left-0"/>
+            <SmallCircleBgPattern className="absolute top-0 left-0" />
             <loc.image />
           </div>
           <div className="grid gap-8 justify-items-center">
@@ -23,7 +23,7 @@ const LocationOptionsSection = () => {
             </h3>
             <Link
               to={loc.link}
-              className="bg-peach p-4 text-white rounded-lg"
+              className="bg-peach p-4 text-white rounded-lg hover:bg-lightPeach active:bg-peach"
             >
               SEE LOCATION
             </Link>

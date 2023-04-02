@@ -35,9 +35,9 @@ const Footer = () => {
             how our expertise can help your business grow.
           </p>
         </div>
-        <button className="w-40 h-14 bg-white text-black rounded-lg tracking-btn font-medium hover:bg-lightPeach hover:text-white active:text-black active:bg-white">
+        <Link to="/contact" className="w-40 h-14 grid place-items-center bg-white text-black rounded-lg tracking-btn font-medium hover:bg-lightPeach hover:text-white active:text-black active:bg-white">
           GET IN TOUCH
-        </button>
+        </Link>
       </section>
 
       {/* FOOTER CONTENT */}
@@ -59,7 +59,10 @@ const Footer = () => {
           <ul className="w-full text-sm font-normal leading-[14px] tracking-[2px] flex flex-col justify-center items-center gap-8 md:col-start-2 md:col-end-4 md:flex-row md:self-end md:justify-end">
             {navigationData.map((navDta) => {
               return (
-                <li key={navDta?.id}>
+                <li
+                  key={navDta?.id}
+                  className="hover:border-b hover:border-b-white"
+                >
                   <Link to={navDta?.link}>{navDta?.name}</Link>
                 </li>
               );
@@ -85,7 +88,11 @@ const Footer = () => {
             {socialIconsLinks?.map((iconLink) => {
               return (
                 <li key={iconLink?.id}>
-                  <Link to={iconLink?.link}>{<iconLink.icon />}</Link>
+                  <Link to={iconLink?.link}>
+                    {
+                      <iconLink.icon className="fill-peach hover:fill-lightPeach" />
+                    }
+                  </Link>
                 </li>
               );
             })}

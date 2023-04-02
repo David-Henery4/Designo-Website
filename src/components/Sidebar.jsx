@@ -5,7 +5,7 @@ const Sidebar = ({ isSidebarActive, setIsSidebarActive }) => {
   // 
   return (
     <aside
-      className={`absolute top-[97.66px] left-0 w-full px-6 py-12 bg-black text-white text-2xl leading-bodyMob tracking-[2px] transition-all z-[500] sm:hidden ${
+      className={`absolute top-[97.66px] left-0 w-full px-6 py-12 bg-black text-white text-2xl leading-bodyMob tracking-[2px] transition-all z-[1200] sm:hidden ${
         isSidebarActive ? "-translate-x-0" : "-translate-x-full"
       }`}
     >

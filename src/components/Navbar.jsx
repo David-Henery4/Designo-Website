@@ -42,7 +42,7 @@ const Navbar = ({ isSidebarActive, setIsSidebarActive }) => {
         <ul className="text-sm leading-[14px] tracking-[2px] hidden justify-center items-center gap-5 sm:flex md:gap-10">
           {navigationData.map((navDta) => {
             return (
-              <li key={navDta?.id}>
+              <li key={navDta?.id} className="hover:border-b hover:border-b-black">
                 <Link to={navDta?.link}>{navDta?.name}</Link>
               </li>
             );

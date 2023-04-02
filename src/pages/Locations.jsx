@@ -1,6 +1,6 @@
 import locationsDetails from "../data/locationsDetails";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-
+import { ThreeCirclesBgPattern } from "../assets";
 
 const Locations = () => {
   return (
@@ -16,8 +16,8 @@ const Locations = () => {
               <div className="h-80 sm:h-[326px] sm:rounded-2xl sm:overflow-hidden smDesk:col-start-2 smDesk:col-end-3 smDesk:row-start-1 smDesk:row-end-2 group-even:smDesk:col-start-1 group-even:smDesk:col-end-2">
                 <MapContainer
                   style={{ height: "100%", width: "100%" }}
-                  className="h-full w-full"
-                  center={loc.coords}
+                  className="h-full w-full relative"
+                  center={loc?.coords}
                   zoom={13}
                   scrollWheelZoom={false}
                 >
@@ -25,16 +25,15 @@ const Locations = () => {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   />
-                  <Marker position={loc.coords}>
-                    <Popup>
-                      A pretty CSS3 popup. <br /> Easily customizable.
-                    </Popup>
+                  <Marker position={loc?.coords}>
+                    <Popup>{loc?.address?.locationName}</Popup>
                   </Marker>
                 </MapContainer>
               </div>
 
               {/* DETAILS */}
-              <div className="w-full py-20 px-6 flex flex-col justify-center items-center gap-6 bg-baige sm:rounded-2xl sm:items-start sm:px-[75px] sm:py-[88px] large:px-24 large:py-[88px]">
+              <div className="relative w-full py-20 px-6 overflow-hidden flex flex-col justify-center items-center gap-6 bg-baige sm:rounded-2xl sm:items-start sm:px-[75px] sm:py-[88px] large:px-24 large:py-[88px]">
+                <ThreeCirclesBgPattern className="pointer-events-none absolute top-0 left-0 sm:-top-[80%]"/>
                 {/* Name */}
                 <h3 className="text-head1Mob leading-9 font-medium text-peach xsm:text-head2 xsm:leading-head2">
                   {loc?.name}
@@ -69,17 +68,3 @@ const Locations = () => {
 };
 
 export default Locations;
-
-
-// old image
-
-{/* <picture>
-  <source srcSet={loc.mapImage.desk} media="(min-width:58.12em)" />
-  <source srcSet={loc.mapImage.tab} media="(min-width:30.31em)" />
-  <img
-    className="w-full object-cover smDesk:h-full"
-    src={loc?.mapImage?.desk}
-    alt={`map of the office location in ${loc?.name}`}
-    srcSet={loc?.mapImage?.desk}
-  />
-</picture>; */}

@@ -56,27 +56,27 @@ module.exports = {
       backgroundImage: {
         // WEB DESIGN CARDS
         "web-design-card-mob":
-          "url('./src/assets/home/mobile/image-web-design.jpg')",
+          "url('./src/assets/image-web-design.jpg')",
         "web-design-card-tab":
-          "url('./src/assets/home/tablet/image-web-design.jpg')",
+          "url('./src/assets/image-web-design.jpg')",
         "web-design-card-desk":
-          "url('./src/assets/home/desktop/image-web-design-large.jpg')",
+          "url('./src/assets/image-web-design-large.jpg')",
 
         // APP DESIGN CARDS
         "app-design-card-mob":
-          "url('./src/assets/home/mobile/image-app-design.jpg')",
+          "url('./src/assets/image-app-design.jpg')",
         "app-design-card-tab":
-          "url('./src/assets/home/tablet/image-app-design.jpg')",
+          "url('./src/assets/image-app-design.jpg')",
         "app-design-card-desk":
-          "url('./src/assets/home/desktop/image-app-design.jpg')",
+          "url('./src/assets/image-app-design.jpg')",
 
         // GRAPHIC DESIGN CARDS
         "graphic-design-card-mob":
-          "url('./src/assets/home/mobile/image-graphic-design.jpg')",
+          "url('./src/assets/image-graphic-design.jpg')",
         "graphic-design-card-tab":
-          "url('./src/assets/home/tablet/image-graphic-design.jpg')",
+          "url('./src/assets/image-graphic-design.jpg')",
         "graphic-design-card-desk":
-          "url('./src/assets/home/desktop/image-graphic-design.jpg')",
+          "url('./src/assets/image-graphic-design.jpg')",
       },
     },
   },

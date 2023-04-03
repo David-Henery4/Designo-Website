@@ -56,17 +56,11 @@ module.exports = {
       backgroundImage: {
         // WEB DESIGN CARDS
         "web-design-card-mob":
-          "url('./dist/assets/image-web-design.jpg')",
+          "url('./src/assets/home/mobile/image-web-design.jpg')",
         "web-design-card-tab":
-          "url('./dist/assets/image-web-design.jpg')",
+          "url('./src/assets/home/tablet/image-web-design.jpg')",
         "web-design-card-desk":
-          "url('./dist/assets/image-web-design-large.jpg')",
-        // "web-design-card-mob":
-        //   "url('./src/assets/home/mobile/image-web-design.jpg')",
-        // "web-design-card-tab":
-        //   "url('./src/assets/home/tablet/image-web-design.jpg')",
-        // "web-design-card-desk":
-        //   "url('./src/assets/home/desktop/image-web-design-large.jpg')",
+          "url('./src/assets/home/desktop/image-web-design-large.jpg')",
 
         // APP DESIGN CARDS
         "app-design-card-mob":

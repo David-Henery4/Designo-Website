@@ -1,6 +1,6 @@
 # Frontend Mentor - Designo agency website solution
 
-This is a solution to the [Designo agency website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Designo agency website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -14,9 +14,6 @@ This is a solution to the [Designo agency website challenge on Frontend Mentor](
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -33,17 +30,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Home/Hero-Screenhot](./screenshot/home-hero.png)
 
 ### Links
+
+// LINKS TO BE ADDED
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
@@ -52,64 +43,62 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML5 markup
+- CSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Vite](https://v3.vitejs.dev) - Project setup/bundler library
+- [SCSS](https://sass-lang.com) - CSS extension language
+- [TailwindCSS](https://tailwindcss.com) - CSS utility class library
+- [React](https://reactjs.org) - JS library
+- [React-Router](https://reactrouter.com/en/main) - Reacting Routing Library
+- [Leaflet](https://leafletjs.com) - Interactive maps javascript library
+- [React-Leaflet](https://react-leaflet.js.org) - Helps intergrate Leaflet into react via components
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This is only the second project I have used "vite" to setup my project and the difference in not only speed but the dev experience as whole is a lot more enjoyable than if I would of used "create-react-app". One of the main reasons for this is because of the little things, for instance hot module replace, which renders css changes in only the places you actually make changes to, instead of refreshing in the entire page. The little things like this make for me a better, more enjoyable dev experience and I will definitely using "vite" more when setting up my projects in the future.
 
-To see how you can add code snippets, see below:
+Another thing about this project was it enabled me to use "leaflet.js", which I have not used in a long time. I have always enjoyed using libraries like this because it makes me want to develop features that could be used in future projects someday and I find its an really intresting type of library in general. 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+Here is the simple way I implemented the map into my project:
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+
+/* MAP */
+
+<div className="h-80 sm:h-[326px] sm:rounded-2xl sm:overflow-hidden smDesk:col-start-2 smDesk:col-end-3 smDesk:row-start-1 smDesk:row-end-2 group-even:smDesk:col-start-1 group-even:smDesk:col-end-2">
+  <MapContainer
+    style={{ height: "100%", width: "100%" }}
+    className="h-full w-full relative"
+    center={loc?.coords}
+    zoom={13}
+    scrollWheelZoom={false}
+  >
+    <TileLayer
+      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    />
+    <Marker position={loc?.coords}>
+      <Popup>{loc?.address?.locationName}</Popup>
+    </Marker>
+  </MapContainer>
+</div>;
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+In the future I'm keen to try and incorperate maps into my own apps as I feel there could be some fun and interesting features that can be built with them and I look forward to implement these into future projects and create some decent apps using them.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [leaflet.js docs](https://leafletjs.com) - This is the leaflet.js documentation, if you want to learn more about how to use it.
+- [react-leaflet docs](https://react-leaflet.js.org/) - This is the leaflet.js documentation, check this out if you want to learn more about how to use leaflet along side react.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [DjhWebdevelopment](https://www.djhwebdevelopment.com/)
+- Frontend Mentor - [@David-Henery4](https://www.frontendmentor.io/profile/David-Henery4)
+- LinkedIn - [David Henery](https://www.linkedin.com/in/david-henery-725458241)

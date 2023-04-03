@@ -34,10 +34,9 @@ Users should be able to:
 
 ### Links
 
-// LINKS TO BE ADDED
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Fontend-mentor](https://www.frontendmentor.io/solutions/designomultipagesite-react-tailwindcss-vite-reactrouter-S6KJwJxZgF)
+- Live Site URL: [Design-customs](https://designo-customs.netlify.app)
 
 ## My process
 

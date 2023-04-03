@@ -88,7 +88,7 @@ const Footer = () => {
             {socialIconsLinks?.map((iconLink) => {
               return (
                 <li key={iconLink?.id}>
-                  <Link to={iconLink?.link}>
+                  <Link to={iconLink?.link} aria-label={`${iconLink.linkLabel}`}>
                     {
                       <iconLink.icon className="fill-peach hover:fill-lightPeach" />
                     }
